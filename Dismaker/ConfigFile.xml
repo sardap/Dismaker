@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root>
+	<Player>
+		<Name value = "Nikloa" />
+	</Player>
+</root>
+<?include somedata?>

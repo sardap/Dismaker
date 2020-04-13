@@ -1,0 +1,455 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Game">
+      <UniqueIdentifier>{0cf29f68-4d97-408d-a4ab-082e546df186}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{28813b09-25bf-4fca-85c3-1f0d4c980ded}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Exepections">
+      <UniqueIdentifier>{c83b27b5-5cf0-4e25-a46c-a63e63203601}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Expections">
+      <UniqueIdentifier>{3cffdf45-b1bd-4a92-8a6c-da2fcdee2ebf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bridges">
+      <UniqueIdentifier>{f7fa0be3-f853-4bf7-bf7e-b55d607716a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Bridges">
+      <UniqueIdentifier>{1eeff3b1-702f-4bc5-bce8-0264f134cd15}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Effects">
+      <UniqueIdentifier>{b801c7c2-ca18-4f64-af90-a8f65595dfb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Effects">
+      <UniqueIdentifier>{36256c95-ad8e-49bf-8ea4-e8b2a96d9fbc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Managers">
+      <UniqueIdentifier>{1cc81b2f-7946-4421-9b21-4a5d8e5011b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Managers">
+      <UniqueIdentifier>{165eb85a-1226-4870-9c7d-cb57488ddc62}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Player">
+      <UniqueIdentifier>{9e7135c4-33c7-4cb4-989b-cee19fe14e75}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Player">
+      <UniqueIdentifier>{34bca629-33b8-43e0-ba34-5c7f5c7236c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Builder">
+      <UniqueIdentifier>{226beab5-4ba5-4dbb-b36a-06eb508dd8fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Builder">
+      <UniqueIdentifier>{030ec198-ddc9-4541-951e-8f6cddbba937}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\DialogTree">
+      <UniqueIdentifier>{e8ab1005-e259-4260-a93b-3a10165651af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\DialogTree\DialogHolder">
+      <UniqueIdentifier>{9a73c493-11cf-4329-84a1-dd9b1c18d419}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\DialogTree\Dialog">
+      <UniqueIdentifier>{c480962b-827e-468c-a9d0-bde8578adde5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\DialogTree">
+      <UniqueIdentifier>{02f63668-6850-47d3-abaf-261c4f0a850a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\DialogTree\Dialog">
+      <UniqueIdentifier>{a84be6d5-d7db-49a9-9eb4-9c7481ed7175}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\DialogTree\DialogHolder">
+      <UniqueIdentifier>{c5e92cf0-d02e-44a6-83ba-1c2f70d7f13f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Graphics">
+      <UniqueIdentifier>{270326e6-9ab3-4a75-89a0-b9b40b599e66}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Graphics">
+      <UniqueIdentifier>{33678175-713d-4190-b950-9f549ed32dbd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Utils">
+      <UniqueIdentifier>{eedf5b07-ec5c-447f-a6f1-827b9ea33491}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Utils">
+      <UniqueIdentifier>{2ba40719-2616-4b45-aca8-3cf175550c6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\DataStructures">
+      <UniqueIdentifier>{2db73334-252e-4a80-98e2-bd91506d95c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Configuration">
+      <UniqueIdentifier>{5efde02b-2cdf-4052-abb9-c66326bbcd16}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Graphics\GUI">
+      <UniqueIdentifier>{9d52f8f7-2cf8-42a0-b154-3a894ee638d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Graphics\GUI\Button">
+      <UniqueIdentifier>{4c9d2fa2-2e00-4a5f-b1e1-e1eb6864e5cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Graphics\GUI">
+      <UniqueIdentifier>{5e898201-6cba-4ec1-a2d4-2f4edbe5cdd9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Graphics\GUI\Button">
+      <UniqueIdentifier>{256cfdb5-e80e-410e-96d0-98b6f7a4940e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Graphics\GUI\TextBox">
+      <UniqueIdentifier>{15004b41-d13e-4950-97bb-5dafb5a4b160}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Graphics\GUI\TextBox">
+      <UniqueIdentifier>{d44e105c-caea-4f62-95a2-82c8e6cc94f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Bridges\InputBridge">
+      <UniqueIdentifier>{9e99d897-214a-43fd-98bc-48be348dd24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Managers\GUIManager">
+      <UniqueIdentifier>{ae764497-efee-4380-b576-d4aa6a2ecffc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Clocks">
+      <UniqueIdentifier>{72d17136-e2b8-4572-82c2-bcb900c4e6d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Clock">
+      <UniqueIdentifier>{8115744b-7fd6-44c5-b870-41c5612f2da3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Game\Managers\StateData">
+      <UniqueIdentifier>{ff4110f5-389c-4076-b880-3757a4ddc72f}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="World.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="NotImplmentedExpection.h">
+      <Filter>Header Files\Exepections</Filter>
+    </ClInclude>
+    <ClInclude Include="Effect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="ProcedeEffect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="ExitEffect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Effects.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Dialog.h">
+      <Filter>Header Files\Game\DialogTree\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="Option.h">
+      <Filter>Header Files\Game\DialogTree\Dialog</Filter>
+    </ClInclude>
+    <ClInclude Include="GameManger.h">
+      <Filter>Header Files\Game\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="BridgerManager.h">
+      <Filter>Header Files\Game\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="Managers.h">
+      <Filter>Header Files\Game\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="CompositeEffect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogHolder.h">
+      <Filter>Header Files\Game\DialogTree\DialogHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Feeling.h">
+      <Filter>Header Files\Game\DialogTree\DialogHolder</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Header Files\Game\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="Builder.h">
+      <Filter>Header Files\Game\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionBuilder.h">
+      <Filter>Header Files\Game\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="LoopEffect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangeFeelingEffect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogHolderBuilder.h">
+      <Filter>Header Files\Game\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogTree.h">
+      <Filter>Header Files\Game\DialogTree</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogTreeBuilder.h">
+      <Filter>Header Files\Game\Builder</Filter>
+    </ClInclude>
+    <ClInclude Include="ConditionalPrcoudeEffect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="Border.h">
+      <Filter>Header Files\Game\Graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableComposite.h">
+      <Filter>Header Files\Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderableRectangle.h">
+      <Filter>Header Files\Game\Graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="IGUI.h">
+      <Filter>Header Files\Game\Graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorUtils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="GameUtils.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="Button.h">
+      <Filter>Header Files\Game\Graphics\GUI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files\Game\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="TextConfigInfo.h">
+      <Filter>Header Files\Game\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionButton.h">
+      <Filter>Header Files\Game\Graphics\GUI\Button</Filter>
+    </ClInclude>
+    <ClInclude Include="MouseInfo.h">
+      <Filter>Header Files\Utils</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBoxConfigInfo.h">
+      <Filter>Header Files\Game\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="BorderConfigInfo.h">
+      <Filter>Header Files\Game\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="RectangleConfigInfo.h">
+      <Filter>Header Files\Game\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="GameExpections.h">
+      <Filter>Header Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="GameShape.h">
+      <Filter>Header Files\Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="IProcessInput.h">
+      <Filter>Header Files\Game\Graphics\GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="TextBox.h">
+      <Filter>Header Files\Game\Graphics\GUI\TextBox</Filter>
+    </ClInclude>
+    <ClInclude Include="DialogTextBox.h">
+      <Filter>Header Files\Game\Graphics\GUI\TextBox</Filter>
+    </ClInclude>
+    <ClInclude Include="OptionTextBox.h">
+      <Filter>Header Files\Game\Graphics\GUI\TextBox</Filter>
+    </ClInclude>
+    <ClInclude Include="InputBridge.h">
+      <Filter>Header Files\Bridges\InputBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="Inputs.h">
+      <Filter>Header Files\Bridges\InputBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderBridge.h">
+      <Filter>Header Files\Bridges</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridge.h">
+      <Filter>Header Files\Bridges</Filter>
+    </ClInclude>
+    <ClInclude Include="Bridges.h">
+      <Filter>Header Files\Bridges</Filter>
+    </ClInclude>
+    <ClInclude Include="KeyBoardInputBridge.h">
+      <Filter>Header Files\Bridges\InputBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="InputState.h">
+      <Filter>Header Files\Bridges\InputBridge</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayMusicEffect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioManager.h">
+      <Filter>Header Files\Game\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="SFMLManager.h">
+      <Filter>Header Files\Game\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="ChangePortiratEffect.h">
+      <Filter>Header Files\Game\Effects</Filter>
+    </ClInclude>
+    <ClInclude Include="AudioConfigInfo.h">
+      <Filter>Header Files\Game\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="RenderManager.h">
+      <Filter>Header Files\Game\Managers</Filter>
+    </ClInclude>
+    <ClInclude Include="GUIManager.h">
+      <Filter>Header Files\Game\Managers\GUIManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Renderable.h">
+      <Filter>Header Files\Game\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GameClock.h">
+      <Filter>Header Files\Game\Clocks</Filter>
+    </ClInclude>
+    <ClInclude Include="GameState.h">
+      <Filter>Header Files\Game\Managers\StateData</Filter>
+    </ClInclude>
+    <ClInclude Include="GameShapeConfigInfo.h">
+      <Filter>Header Files\Game\Configuration</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="World.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="NotImplmentedExpection.cpp">
+      <Filter>Source Files\Expections</Filter>
+    </ClCompile>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Effect.cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="ProcdeEffect.cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="ExitEffect.cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Dialog.cpp">
+      <Filter>Source Files\Game\DialogTree\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="Option.cpp">
+      <Filter>Source Files\Game\DialogTree\Dialog</Filter>
+    </ClCompile>
+    <ClCompile Include="BridgeManager.cpp">
+      <Filter>Source Files\Game\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="GameManager.cpp">
+      <Filter>Source Files\Game\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="CompositeEffect.cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogHolder.cpp">
+      <Filter>Source Files\Game\DialogTree\DialogHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Feeling.cpp">
+      <Filter>Source Files\Game\DialogTree\DialogHolder</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Source Files\Game\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Builder.cpp">
+      <Filter>Source Files\Game\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionBuilder.cpp">
+      <Filter>Source Files\Game\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="LoopEffect.cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangeFeelingEffect.cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogHolderBuilder.cpp">
+      <Filter>Source Files\Game\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogTree.cpp">
+      <Filter>Source Files\Game\DialogTree</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogTreeBuilder.cpp">
+      <Filter>Source Files\Game\Builder</Filter>
+    </ClCompile>
+    <ClCompile Include="ConditionalPrcoudeEffect.cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderableComposite.cpp">
+      <Filter>Source Files\Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderableRectangle.cpp">
+      <Filter>Source Files\Game\Graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="Border.cpp">
+      <Filter>Source Files\Game\Graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="IGUI.cpp">
+      <Filter>Source Files\Game\Graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="GameUtils.cpp">
+      <Filter>Source Files\Utils</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionButton.cpp">
+      <Filter>Source Files\Game\Graphics\GUI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="Button.cpp">
+      <Filter>Source Files\Game\Graphics\GUI\Button</Filter>
+    </ClCompile>
+    <ClCompile Include="GameShape.cpp">
+      <Filter>Source Files\Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GUIManager.cpp">
+      <Filter>Source Files\Game\Graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="IProcessInput.cpp">
+      <Filter>Source Files\Game\Graphics\GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="TextBox.cpp">
+      <Filter>Source Files\Game\Graphics\GUI\TextBox</Filter>
+    </ClCompile>
+    <ClCompile Include="DialogTextBox.cpp">
+      <Filter>Source Files\Game\Graphics\GUI\TextBox</Filter>
+    </ClCompile>
+    <ClCompile Include="OptionTextBox.cpp">
+      <Filter>Source Files\Game\Graphics\GUI\TextBox</Filter>
+    </ClCompile>
+    <ClCompile Include="Bridge.cpp">
+      <Filter>Source Files\Bridges</Filter>
+    </ClCompile>
+    <ClCompile Include="RenderBridge.cpp">
+      <Filter>Source Files\Bridges</Filter>
+    </ClCompile>
+    <ClCompile Include="InputBridge.cpp">
+      <Filter>Source Files\Bridges</Filter>
+    </ClCompile>
+    <ClCompile Include="KeyBoardInputBridge.cpp">
+      <Filter>Source Files\Bridges</Filter>
+    </ClCompile>
+    <ClCompile Include="SFMLManager.cpp">
+      <Filter>Source Files\Game\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="MouseInfo.cpp">
+      <Filter>Source Files\Game\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="AudioManager.cpp">
+      <Filter>Source Files\Game\Managers</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayMusicEffect.cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="ChangePortiratEffect .cpp">
+      <Filter>Source Files\Game\Effects</Filter>
+    </ClCompile>
+    <ClCompile Include="Renderable.cpp">
+      <Filter>Source Files\Game\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GameClock.cpp">
+      <Filter>Source Files\Game\Clock</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

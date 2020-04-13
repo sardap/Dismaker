@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<root>
+	<DialogHolder name = "Marx" description = "Looks like santa">
+
+		<Feeling id = "Happy" value = "100" />
+		<Feeling id = "HatredOfTheBourgeoisie" value = "2,147,483,647" />
+
+		<DialogTree fileName = "" />
+		
+		<Dialog id = "base" text = "Do you want to seize the means of production?">
+			<Option text = "Yes">
+				<Effect type = "Procede" target = "goodComrade" />
+				<Effect type = "ChangeFeeling" target = "Happy" value = "20" />
+			</Option>
+			<Option text = "No">
+				<Effect type = "Procede" target = "BadComrade" />
+			</Option>
+		</Dialog>
+
+		<Dialog id = "goodComrade" text = "Very Nice Comrade">
+			<Option text = "Proshchay">
+				<Effect type = "Exit" />
+			</Option>
+		</Dialog>
+
+		<Dialog id = "BadComrade" text = "Dam you swine">
+			<Option text = "Fine">
+				<Effect type = "Procede" target = "base"/>
+			</Option>
+		</Dialog>
+		
+	</DialogHolder>
+</root>
+<?include somedata?>

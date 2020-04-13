@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<root>
+	<Player name = "Nikloa" />
+	<Window x = "0" y = "0" width = "1920" height = "1080" text = "Prototype" />
+	
+	<OptionButtonInfo>
+		<TextInfo fontLocation = "Resources\Fonts\cour.ttf" color = "0x000000" size = "12" buffer = "3" />
+		<BorderInfo color = "0xA9A9A9" borderFatness = "7" />
+		<RectangleInfo color = "0xf5f5f5" />
+	</OptionButtonInfo>
+	
+	<DialogTextInfo>
+		<TextInfo fontLocation = "Resources\Fonts\cour.ttf" color = "0x000000" size = "35" buffer = "5" />
+		<BorderInfo color = "0xA9A9A9" alpha = "0.95" borderFatness = "20" />
+		<RectangleInfo color = "0xf5f5f5" alpha = "0.80" />
+	</DialogTextInfo>
+	
+	<Mouse clickWindow = "10000" />
+
+	<Audio>
+		<Dialog level = "100" />
+		<Music level = "100" />
+		<SFX level = "100" />
+	</Audio>
+	
+	<Music>
+		<Track id = "Katioucha" fileLocation = "Resources\Music\Katioucha.ogg" />
+	</Music>
+
+	<Menu>
+		<GameShape entrance = "Menu1">
+			<Texture id = "Menu1" fileLocation = "Resources\Menu\Back1.png" />
+		</GameShape>
+	</Menu>
+</root>
+<?include somedata?>

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<root>
+	<DialogHolder name = "Marx" description = "Looks like santa">
+
+		<Feeling id = "Happy" value = "100" />
+		<Feeling id = "HatredOfTheBourgeoisie" value = "2,147,483,647" />
+
+		<DialogTree fileName = "Resources\Marx\GreetingTree.xml" />
+		
+	</DialogHolder>
+</root>
+<?include somedata?>

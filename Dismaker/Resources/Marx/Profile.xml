@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<root>
+	<DialogHolder name = "Marx" description = "Looks like santa">
+
+		<Feeling id = "Happy" value = "100" />
+		<Feeling id = "HatredOfTheBourgeoisie" value = "2,147,483,647" />
+
+		<Portrait startId = "bored">
+			<Texture id = "bored" fileLocation = "Resources\Marx\Portrait1.png" />
+			<Texture id = "happy" fileLocation = "Resources\Marx\PortraitHappy.png" />
+		</Portrait>
+
+		<Background startId = "home">
+			<Texture id = "home" fileLocation = "Resources\Marx\BackGround1.png" />
+		</Background>
+		
+		<DialogTree fileName = "Resources\Marx\GreetingTree.xml" />
+	</DialogHolder>
+</root>
+<?include somedata?>

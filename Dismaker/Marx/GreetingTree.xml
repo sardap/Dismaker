@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<root>
+	<DialogTree id = "base" entrance = "base">
+
+		<Dialog id = "base" text = "Do you want to seize the means of production?">
+			<Option text = "Yes">
+				<Effect type = "Procede" target = "goodComrade" />
+				<Effect type = "ChangeFeeling" target = "Happy" value = "20" />
+			</Option>
+			<Option text = "No">
+				<Effect type = "Procede" target = "BadComrade" />
+			</Option>
+			<Option text = "HandsomeAf">
+				<Effect type = "ChangeFeeling" target = "Happy" value = "20" />
+			</Option>
+		</Dialog>
+
+		<Dialog id = "goodComrade" text = "Very Nice Comrade">
+			<Option text = "Proshchay">
+				<Effect type = "Exit" />
+			</Option>
+		</Dialog>
+
+		<Dialog id = "BadComrade" text = "Dam you swine">
+			<Option text = "Fine">
+				<Effect type = "Procede" target = "base"/>
+			</Option>
+		</Dialog>
+		
+	</DialogTree>
+</root>
+<?include somedata?>

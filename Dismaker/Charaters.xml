@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<root>
+	
+	<Charater fileName = "Resources\Marx\Profile.xml" />
+		
+</root>
+<?include somedata?>

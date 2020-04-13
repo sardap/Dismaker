@@ -1,0 +1,328 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{75EE6F4C-817D-4A15-A929-9FB6AF90DECA}</ProjectGuid>
+    <RootNamespace>Prototype</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+    <ProjectName>Dismaker</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)SharedLibary\src;$(SolutionDir)SFML-master\include;$(SolutionDir)SFML-Binaries\PugiXML\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <PostBuildEvent>
+      <Command>XCOPY "$(SolutionDir)SFML-Binaries\lib\RelWithDebInfo\*.dll" "$(ProjectDir)" /Y /S
+XCOPY "$(SolutionDir)SFML-Binaries\lib\RelWithDebInfo\*.dll" "$(TargetDir)" /Y /S</Command>
+    </PostBuildEvent>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>XCOPY "$(SolutionDir)Resources" "$(TargetDir)Resources\" /Y /S
+XCOPY "$(SolutionDir)Resources" "$(ProjectDir)Resources\" /Y /S
+</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)SharedLibary\src;$(SolutionDir)SFML-master\include;$(SolutionDir)SFML-Binaries\PugiXML\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PreBuildEvent>
+      <Command>XCOPY "$(SolutionDir)Resources" "$(TargetDir)Resources\" /Y /S
+XCOPY "$(SolutionDir)Resources" "$(ProjectDir)Resources\" /Y /S
+</Command>
+    </PreBuildEvent>
+    <PostBuildEvent>
+      <Command>XCOPY "$(SolutionDir)SFML-Binaries\lib\RelWithDebInfo\*.dll" "$(ProjectDir)" /Y /S
+XCOPY "$(SolutionDir)SFML-Binaries\lib\RelWithDebInfo\*.dll" "$(TargetDir)" /Y /S</Command>
+    </PostBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)SharedLibary\src;$(SolutionDir)SFML-master\include;$(SolutionDir)SFML-Binaries\PugiXML\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY "$(SolutionDir)SFML-Binaries\lib\RelWithDebInfo\*.dll" "$(ProjectDir)" /Y /S
+XCOPY "$(SolutionDir)SFML-Binaries\lib\RelWithDebInfo\*.dll" "$(TargetDir)" /Y /S</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>XCOPY "$(SolutionDir)Resources" "$(TargetDir)Resources\" /Y /S
+XCOPY "$(SolutionDir)Resources" "$(ProjectDir)Resources\" /Y /S
+</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(SolutionDir)SharedLibary\src;$(SolutionDir)SFML-master\include;$(SolutionDir)SFML-Binaries\PugiXML\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>SFML_STATIC;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Optimization>Disabled</Optimization>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>XCOPY "$(SolutionDir)SFML-Binaries\lib\RelWithDebInfo\*.dll" "$(ProjectDir)" /Y /S
+XCOPY "$(SolutionDir)SFML-Binaries\lib\RelWithDebInfo\*.dll" "$(TargetDir)" /Y /S</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>XCOPY "$(SolutionDir)Resources" "$(TargetDir)Resources\" /Y /S
+XCOPY "$(SolutionDir)Resources" "$(ProjectDir)Resources\" /Y /S
+</Command>
+    </PreBuildEvent>
+    <PreLinkEvent>
+      <Command>
+      </Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="AudioConfigInfo.h" />
+    <ClInclude Include="AudioManager.h" />
+    <ClInclude Include="GameShapeConfigInfo.h" />
+    <ClInclude Include="Border.h" />
+    <ClInclude Include="Bridge.h" />
+    <ClInclude Include="BridgerManager.h" />
+    <ClInclude Include="Bridges.h" />
+    <ClInclude Include="Builder.h" />
+    <ClInclude Include="Button.h" />
+    <ClInclude Include="BorderConfigInfo.h" />
+    <ClInclude Include="ChangeFeelingEffect.h" />
+    <ClInclude Include="ChangePortiratEffect.h" />
+    <ClInclude Include="ColorUtils.h" />
+    <ClInclude Include="CompositeEffect.h" />
+    <ClInclude Include="ConditionalPrcoudeEffect.h" />
+    <ClInclude Include="Dialog.h" />
+    <ClInclude Include="DialogTextBox.h" />
+    <ClInclude Include="GameClock.h" />
+    <ClInclude Include="GameShape.h" />
+    <ClInclude Include="GUIManager.h" />
+    <ClInclude Include="InputBridge.h" />
+    <ClInclude Include="Inputs.h" />
+    <ClInclude Include="InputState.h" />
+    <ClInclude Include="IProcessInput.h" />
+    <ClInclude Include="KeyBoardInputBridge.h" />
+    <ClInclude Include="MouseInfo.h" />
+    <ClInclude Include="OptionButton.h" />
+    <ClInclude Include="OptionTextBox.h" />
+    <ClInclude Include="PlayMusicEffect.h" />
+    <ClInclude Include="RectangleConfigInfo.h" />
+    <ClInclude Include="RenderBridge.h" />
+    <ClInclude Include="RenderManager.h" />
+    <ClInclude Include="GameState.h" />
+    <ClInclude Include="TextBoxConfigInfo.h" />
+    <ClInclude Include="DialogHolder.h" />
+    <ClInclude Include="DialogHolderBuilder.h" />
+    <ClInclude Include="GameExpections.h" />
+    <ClInclude Include="TextConfigInfo.h" />
+    <ClInclude Include="DialogTree.h" />
+    <ClInclude Include="DialogTreeBuilder.h" />
+    <ClInclude Include="Effect.h" />
+    <ClInclude Include="GameUtils.h" />
+    <ClInclude Include="IGUI.h" />
+    <ClInclude Include="Renderable.h" />
+    <ClInclude Include="LoopEffect.h" />
+    <ClInclude Include="Effects.h" />
+    <ClInclude Include="ExitEffect.h" />
+    <ClInclude Include="Feeling.h" />
+    <ClInclude Include="GameManger.h" />
+    <ClInclude Include="Managers.h" />
+    <ClInclude Include="NotImplmentedExpection.h" />
+    <ClInclude Include="Option.h" />
+    <ClInclude Include="OptionBuilder.h" />
+    <ClInclude Include="Player.h" />
+    <ClInclude Include="ProcedeEffect.h" />
+    <ClInclude Include="Configuration.h" />
+    <ClInclude Include="RenderableComposite.h" />
+    <ClInclude Include="RenderableRectangle.h" />
+    <ClInclude Include="SFMLManager.h" />
+    <ClInclude Include="TextBox.h" />
+    <ClInclude Include="World.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AudioManager.cpp" />
+    <ClCompile Include="Border.cpp" />
+    <ClCompile Include="Bridge.cpp" />
+    <ClCompile Include="Button.cpp" />
+    <ClCompile Include="ChangeFeelingEffect.cpp" />
+    <ClCompile Include="ChangePortiratEffect .cpp" />
+    <ClCompile Include="ColorUtils.cpp" />
+    <ClCompile Include="ConditionalPrcoudeEffect.cpp" />
+    <ClCompile Include="DialogTextBox.cpp" />
+    <ClCompile Include="GameClock.cpp" />
+    <ClCompile Include="GameShape.cpp" />
+    <ClCompile Include="GUIManager.cpp" />
+    <ClCompile Include="InputBridge.cpp" />
+    <ClCompile Include="IProcessInput.cpp" />
+    <ClCompile Include="KeyBoardInputBridge.cpp" />
+    <ClCompile Include="MouseInfo.cpp" />
+    <ClCompile Include="OptionButton.cpp" />
+    <ClCompile Include="DialogHolderBuilder.cpp" />
+    <ClCompile Include="DialogTree.cpp" />
+    <ClCompile Include="DialogTreeBuilder.cpp" />
+    <ClCompile Include="GameUtils.cpp" />
+    <ClCompile Include="IGUI.cpp" />
+    <ClCompile Include="Renderable.cpp" />
+    <ClCompile Include="LoopEffect.cpp" />
+    <ClCompile Include="BridgeManager.cpp" />
+    <ClCompile Include="Builder.cpp" />
+    <ClCompile Include="CompositeEffect.cpp" />
+    <ClCompile Include="Configuration.cpp" />
+    <ClCompile Include="Dialog.cpp" />
+    <ClCompile Include="DialogHolder.cpp" />
+    <ClCompile Include="Effect.cpp" />
+    <ClCompile Include="ExitEffect.cpp" />
+    <ClCompile Include="Feeling.cpp" />
+    <ClCompile Include="GameManager.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="NotImplmentedExpection.cpp" />
+    <ClCompile Include="Option.cpp" />
+    <ClCompile Include="OptionBuilder.cpp" />
+    <ClCompile Include="OptionTextBox.cpp" />
+    <ClCompile Include="Player.cpp" />
+    <ClCompile Include="PlayMusicEffect.cpp" />
+    <ClCompile Include="ProcdeEffect.cpp" />
+    <ClCompile Include="RenderableComposite.cpp" />
+    <ClCompile Include="RenderableRectangle.cpp" />
+    <ClCompile Include="RenderBridge.cpp" />
+    <ClCompile Include="SFMLManager.cpp" />
+    <ClCompile Include="TextBox.cpp" />
+    <ClCompile Include="World.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\SharedLibary\SharedLibary.vcxproj">
+      <Project>{a1854be7-1c6f-4c89-a7f9-b98fcba14216}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\PugiXML\PugiXML.vcxproj">
+      <Project>{09ed25fd-94b9-4450-b622-460c3e291fe3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SFML-Binaries\src\SFML\Audio\sfml-audio.vcxproj">
+      <Project>{bb72996e-1131-3d8c-ae5b-6ad77fbfec4e}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SFML-Binaries\src\SFML\Graphics\sfml-graphics.vcxproj">
+      <Project>{9868cba1-ce5b-33c1-baf8-1b4e2e05f23b}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SFML-Binaries\src\SFML\Main\sfml-main.vcxproj">
+      <Project>{97e63298-576c-30b1-ab01-2155bb2bd883}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SFML-Binaries\src\SFML\System\sfml-system.vcxproj">
+      <Project>{edd263ab-bcf1-3835-88ea-8e09ef9f89b0}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SFML-Binaries\src\SFML\Window\sfml-window.vcxproj">
+      <Project>{7c3edab0-dc21-365c-9066-a16ec6a06be3}</Project>
+    </ProjectReference>
+    <ProjectReference Include="..\SharedLibary\SharedLibary.vcxproj">
+      <Project>{a1854be7-1c6f-4c89-a7f9-b98fcba14216}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

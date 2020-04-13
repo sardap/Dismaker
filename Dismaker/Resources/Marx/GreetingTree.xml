@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<root>
+	<DialogTree id = "base" entrance = "entrance">
+
+		<Dialog id = "entrance" text = "Howdy there partner it's me Karl Marx the man himself. Howdy there partner it's me Karl Marx the man himself.Howdy there partner it's me Karl Marx the man himself.Howdy there partner it's me Karl Marx the man himself.Howdy there partner it's me Karl Marx the man himself. ">
+			<Audio fileLocation = "Resources\Marx\DialogAudio\entrance.ogg" />
+			<Option text = "Hi?">
+				<Effect type = "Procede" target = "base" />
+			</Option>
+		</Dialog>
+		
+		<Dialog id = "base" text = "Do you want to go seize the means of repoduction?">
+			<Audio fileLocation = "Resources\Marx\DialogAudio\base.ogg" />
+			<Option text = "Yes">
+				<Effect type = "Procede" target = "goodComrade" />
+				<Effect type = "ChangeFeeling" target = "Happy" value = "20" />
+				<Effect type = "MusicEffect" id = "Katioucha" loop = "true" />
+			</Option>
+			<Option text = "No">
+				<Effect type = "Procede" target = "badComrade" />
+			</Option>
+			<Option text = "HandsomeAf">
+				<Effect type = "ChangeFeeling" target = "Happy" value = "20" />
+				<Effect type = "ChangePortrait" target = "happy"/>
+				<Effect type = "Procede" target = "flattered"/>
+			</Option>
+		</Dialog>
+
+		<Dialog id = "goodComrade" text = "Eh very nice that's my man let's go now.">
+			<Audio fileLocation = "Resources\Marx\DialogAudio\goodComrade.ogg" />
+			<Option text = "Wait i changed my mind">
+				<Effect type = "Procede" target = "badComrade" />
+				<Effect type = "ChangeFeeling" target = "Happy" value = "-20" />
+			</Option>
+			<Option text = "Okay">
+				<Effect type = "Exit" />
+			</Option>
+		</Dialog>
+
+		<Dialog id = "badComrade" text = "Dam you you capitalist pig (&quot;spits&quot;).">
+			<Audio fileLocation = "Resources\Marx\DialogAudio\badComrade.ogg" />
+			<Option text = "Fine">
+				<Effect type = "Procede" target = "base"/>
+			</Option>
+			<Option text = "Capitalism is the most effective way of distributing resources">
+				<Effect type = "ChangeFeeling" target = "Happy" value = "-10000" />
+				<Effect type = "Procede" target = "mosteff"/>
+			</Option>
+		</Dialog>
+
+		<Dialog id = "mosteff" text = "Go fuck yourslef your dirty J">
+			<Audio fileLocation = "Resources\Marx\DialogAudio\mosteff.ogg" />
+			<Option text = "Okay?">
+				<Effect type = "Exit"/>
+			</Option>
+		</Dialog>
+
+		<Dialog id = "flattered" text = "Ooooh my you silver tongue devil oh oh my.">
+			<Audio fileLocation = "Resources\Marx\DialogAudio\flattered.ogg" />
+			<Option text = "Thank you?">
+				<Effect type = "Procede" target = "base"/>
+			</Option>
+		</Dialog>
+		
+	</DialogTree>
+</root>
+<?include somedata?>
